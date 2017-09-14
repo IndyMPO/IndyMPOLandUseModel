@@ -1,0 +1,10 @@
+import pandas as pd
+import arcpy
+
+src_file = r'I:\000JFLOOD\Cube Land\Data\2025 Forecasts\PBBWHITE2025 - Copy.xlsx'
+dest_file = r'P:\MPO\40 RTP and Air Quality\2045 LRTP\08_LandUseModel_Forecasting\Land Use Model Runs\BY2015\FY2025Iter1\MODEL\Inputs\ZONES.dbf'
+src_col = 'p2025'
+dest_col = 'PBB_WHITE'
+
+src = pd.DataFrame.from_csv(src_file)
+pbb_map = src[src_col].to_dict()

@@ -1,0 +1,61 @@
+===START: Tuesday September 12, 2017 12:10:00 PM===
+
+Creating New Scenario
+New scenario created in 0.7 seconds
+Copying Model Inputs from Previous Iteration
+Model inputs from Previous Iteration copied in 0.3 seconds
+Calculating Accessibilities and Attractivenesses
+Acc and Att calculated in 30.4 seconds
+Updating Input Accessibilities/Attractivenesses
+Acc and Att updated in 13.1 seconds
+Updating Endogenous Variables
+Endogenous variables updated in 0.4 seconds
+
+C:\Python27\ArcGIS10.1>cd C:\Python27\ArcGIS10.1 
+
+C:\Python27\ArcGIS10.1>python C:\LandUseModel\tools\cilum\Scripts\runLand.py "C:\CILUM\Base\BaseYearVS\TestFullScript2\vs_template.ctl" temp "C:\CILUM\Base\BaseYearVS\TestFullScript2\MODEL" 
+
+C:\Python27\ArcGIS10.1>python C:\LandUseModel\tools\cilum\Scripts\MapResults.py "C:\CILUM\Base\BaseYearVS\TestFullScript2" 
+Reading dbfs
+Dbf file converted to data frame in 0.4 seconds
+Dbf file converted to data frame in 0.0 seconds
+Reshaping supply
+Reading locations
+Reading rents
+Dbf file converted to data frame in 0.4 seconds
+Updating shapefiles
+
+C:\Python27\ArcGIS10.1>python C:\LandUseModel\tools\cilum\Scripts\lu2tdm.py "C:\CILUM\Base\BaseYearVS\TestFullScript2" 
+Creating Travel Demand Model Inputs
+Dbf file converted to data frame in 0.2 seconds
+Dbf file converted to data frame in 0.0 seconds
+Travel Demand Model inputs created in 3.7 seconds
+
+C:\Python27\ArcGIS10.1>python C:\LandUseModel\tools\cilum\Scripts\WriteSummary.py "C:\CILUM\Base\BaseYearVS\TestFullScript2" 
+Writing C:\CILUM\Base\BaseYearVS\TestFullScript2\FILES\TestFullScript2Summary.xlsx
+Summary file written in 84.7 seconds
+
+C:\Python27\ArcGIS10.1>python C:\LandUseModel\tools\cilum\Scripts\UpdateEndogVar.py "C:\CILUM\Base\BaseYearVS\TestFullScript2" 
+Dbf file converted to data frame in 0.1 seconds
+Dbf file converted to data frame in 0.0 seconds
+Dbf file converted to data frame in 0.2 seconds
+Dbf file converted to data frame in 0.0 seconds
+
+C:\Python27\ArcGIS10.1>cd C:\Python27\ArcGIS10.1 
+
+C:\Python27\ArcGIS10.1>python C:\LandUseModel\tools\cilum\Scripts\WriteSummary.py "C:\CILUM\Base\BaseYearVS\TestFullScript2" 
+Writing C:\CILUM\Base\BaseYearVS\TestFullScript2\FILES\TestFullScript2Summary.xlsx
+Summary file written in 76.6 seconds
+Running Cube Land Model
+Cube Land Model run in 239.3 seconds
+Averaging Outputs
+3 Type Errors
+0 Value Errors
+Data frame converted to dbf in 99.7 seconds
+Outputs averaged in 165.3 seconds
+Renaming Files
+Files renamed in 0.0 seconds
+Recreating summary based on averaged outputs
+Summary recreated in 77.1 seconds
+
+===FINISH: Tuesday September 12, 2017 12:18:50 PM===
